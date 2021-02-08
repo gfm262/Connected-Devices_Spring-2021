@@ -1,0 +1,60 @@
+/*
+THIS WAS CREATED USING THE EXAMPLE serialport FOR CONNECTED DEVICES.
+CODE CAN BE FOUND HERE: https://github.com/tigoe/html-for-conndev/tree/main/serialport
+*/
+body {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+  font-family: 'Courier', 'Helvetica', Arial, sans-serif;
+}
+
+#useButtons {
+  color: white;
+  font-size: 24px;
+  align-content: center;
+}
+
+#redVal {
+  color: red;
+  background-color: white;
+  font-weight: bold;
+  left:auto;
+}
+
+#greenVal {
+  color: green;
+  background-color: white;
+  font-weight: bold;
+  left:auto;
+}
+
+#blueVal {
+  color: navy;
+  background-color: white;
+  font-weight: bold;
+  left:auto;
+}
+
+#echo {
+  width: 100vw;
+
+}
+
+#echoP {
+  color: white;
+  font-weight: bolder;
+  background-color: gray;
+  padding: 10px;
+}
+
+#echoImage {
+  width: 100vw;
+  height: 1vh;
+}
+
+#red:hover, #green:hover, #blue:hover{
+  background: #111111;
+}

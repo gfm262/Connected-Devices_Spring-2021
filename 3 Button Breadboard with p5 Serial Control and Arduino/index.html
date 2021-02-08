@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--THIS WAS CREATED USING THE EXAMPLE serialport FOR CONNECTED DEVICES.
+CODE CAN BE FOUND HERE: https://github.com/tigoe/html-for-conndev/tree/main/serialport-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+  <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5.serialserver@0.0.29/lib/p5.serialport.js"></script>
+  <script src="script.js"></script>
+  <title>Play with (AWE)some MYSTERY BUTTONS!</title>
+</head>
+<!--FOR SOME REASON THE CODE BELOW AS HEADER DIDN'T WORK.
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86">
+    <link rel="stylesheet" href="style.css">
+
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5.serialserver@0.0.29/lib/p5.serialport.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+
+    <script src="script.js"></script>
+
+    <title>Play with (AWE)some MYSTERY BUTTONS!</title>
+  </head>
+-->
+  <body>
+    <!--PORT SECTION & Instructions-->
+  <div>
+    <h3>Select Your Device's Connecting Port</h3>
+    <section id="serialport">
+      Please reload this page with "p5 Serial Control" open.
+      <br/>
+      Next, select a serial port from the dropdown:
+      <br/>
+      <br/>
+      <select id="portSelector"></select>
+    </section>
+  </div>
+    <!--BUTTON SECTION & PLEASE USE BUTTONS Instructions-->
+  <div>
+    <section id="buttons"><h2>¿¿¿Mystery Buttons???</h2></section>
+    <section id="useButtons"></section>
+    <table>
+      <tr>
+        <td>LEFT Button: </td>
+        <td><input type="button" id="red" value="off" onclick="changeBG('black')"></td>
+        <td><span id="redVal"></span><br></td>
+      </tr>
+      <tr>
+        <td>CENTER Button: </td>
+        <td><input type="button" id="green" value="off" onclick="changeBG('black')"></td>
+        <td><span id="greenVal"></span><br></td>
+      </tr>
+      <tr>
+        <td>RIGHT Button: </td>
+        <td><input type="button" id="blue" value="off" onclick="changeBG('black')"></td>
+        <td><span id="blueVal"></span><br></td>
+      </tr>
+    </table>
+  </div>
+    <!--ECHO SECTION & INFORMATION-->
+  <div id="echo"></div>
+  </body>
+</html>
