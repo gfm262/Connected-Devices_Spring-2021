@@ -1,0 +1,87 @@
+
+body {
+  width: 800px;
+  margin: 0 auto;
+  background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+  font-family: 'Courier', 'Helvetica', Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.subheader {
+  display: flex;
+  justify-content: center;
+  margin-top: -2em;
+}
+
+h1, .header, .subheader {
+  color: white;
+  font-weight: bold;
+}
+#code {
+  width: 3em;
+  height: 3em;
+  margin-top: -0.6em;
+}
+#qr {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+  width: 5em;
+  height: 5em;
+  background-image: url("img/bubble.png");
+  background-size: 5em 5em;
+}
+#first {
+  background-image: url("img/first.gif");
+  background-size: 10em 10em;
+}
+
+#second {
+  background-image: url("img/second.gif");
+  background-size: 10em 10em;
+}
+
+#third {
+  background-image: url("img/third.gif");
+  background-size: 10em 10em;
+}
+#main {
+  width: 30em;
+  height: 80em;
+  border: 5px solid #c3c3c3;
+  display: flex;
+  background-color: #0b4fff;
+  flex-flow: row-reverse wrap;
+  align-content: flex-start;
+}
+
+#bubble {
+  width: 10em;
+  height: 10em;
+  background-image: url("img/bubble.png");
+  background-size: 10em 10em;
+
+}
+
+.fixed-top {
+  //background-color: black;
+  box-sizing: border-box;
+  display: flex;
+  align-item: flex-start;
+  width: 10em;
+  height: 10em;
+}
+
+#start-here {
+  width: 10em;
+  height: 10em;
+  background-image: url("img/start_here.png");
+  background-size: 10em 10em;
+
+}
