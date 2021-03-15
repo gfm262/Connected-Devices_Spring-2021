@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- Responsive code form from https://www.w3schools.com/howto/howto_css_responsive_form.asp -->
+<!-- PHP code for form from https://html.form.guide/email-form/php-form-to-email/ -->
+<!-- Code for how to Submit JavaScript AND PhP: https://html.form.guide/web-form/submit-form-multiple-scripts/ -->
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <title>QRstuv.Info - inFORMing the world via QR</title>
+  </head>
+    <body>
+    <div id="header"><img id="logo" src="img/QRstuv_Info_Logo.png" alt="Logo for QRstuv.Info - inFORMing the world via QR"></div>
+    <div id="welcome">
+          <p>Please fill out the information below. <br/><br/><i>Once you hit submit, <br/>a staff member will be notified you're here.</i></p>
+          <h3>Thank you for your visit!</h3>
+
+    </div>
+    <div class="container">
+      <form method="post" id="QRform" action="form-to-email-appt.php">
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">First Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="fname" name="firstname" placeholder="Your first name">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">Last Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="lname" name="lastname" placeholder="Your last name">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="subject">Company</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="company" name="company" placeholder="Company Name">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="subject">Appointment Time</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="comment" name="comment" maxlength="40" placeholder="What Brings You In?">
+          </div>
+        </div>
+
+
+
+        </div>
+        <div><br/></div>
+        <div class="row">
+          <input id="submit" type="submit" value="submit" onclick="submit">
+        </div>
+      </form>
+
+  </body>
+</html>

@@ -1,0 +1,48 @@
+/*
+THIS WAS CREATED USING THE EXAMPLE serialport FOR CONNECTED DEVICES.
+CODE CAN BE FOUND HERE: https://github.com/tigoe/html-for-conndev/tree/main/serialport
+*/
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Helvetica', Arial, sans-serif;
+}
+
+#useButtons {
+  color: white;
+  font-size: 24px;
+  align-content: center;
+}
+
+#redVal {
+  color: green;
+  background-color: white;
+  font-weight: bold;
+  left:auto;
+}
+
+#attentionD {
+  color: white;
+  background-color: red;
+  font-weight: bold;
+  text-align: center;
+  font-size: 10vw;
+  padding: 5vw;
+  border-width: 2vw;
+  border-style: solid;
+  border-color: black;
+
+}
+
+#attentionP {
+  animation: blinker 3s linear infinite;
+}
+@keyframes blinker {
+  50% {
+    opacity: 20%;
+  }
+}
+
+#red:hover, #green:hover, #blue:hover{
+  background: #888888;
+}

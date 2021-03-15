@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- Responsive code form from https://www.w3schools.com/howto/howto_css_responsive_form.asp -->
+<!-- PHP code for form from https://html.form.guide/email-form/php-form-to-email/ -->
+<!-- Code for how to Submit JavaScript AND PhP: https://html.form.guide/web-form/submit-form-multiple-scripts/ -->
+
+<html lang="en" dir="ltr">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script type="text/javascript">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+  </script>
+  <meta charset="utf-8">
+  <title>QRstuv.Info - inFORMing the world via QR</title>
+  </head>
+    <body>
+    <div id="header"><img id="logo" src="img/QRstuv_Info_Logo.png" alt="Logo for QRstuv.Info - inFORMing the world via QR"></div>
+    <div id="welcome">
+      <h2>Welcome!</h2>
+          <p>Please follow the instructions below.</p>
+
+    </div>
+    <div class="container">
+    <form>
+      <div class="row">
+        <div class="col-25">
+          <label for="reason">Reason for Visit</label>
+        </div>
+        <div class="col-75">
+      <select id="reason" name="" onchange="javascript:location.href = this.value;">
+        <option value="empty">-- Please Select --</option>
+        <option value="http://www.qrstuv.info/ApptForm.html">Appointment</option>
+        <option value="http://www.qrstuv.info/WalkinForm.html">Walk-in</option>
+        <option value="http://www.qrstuv.info/DockForm.html">Need Access to Loading Dock</option>
+        <option value="http://www.qrstuv.info/SalesForm.html">Sales</option>
+      </select>
+      </div>
+      <p><br/><br/>
+      </div>
+    </form>
+    </div>
+  </body>
+</html>
