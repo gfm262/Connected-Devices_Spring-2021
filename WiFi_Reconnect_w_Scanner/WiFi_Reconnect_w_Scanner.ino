@@ -11,7 +11,9 @@
   http://librarymanager/All#WiFi101
 
   Combined codes for WiFi_Reconnect.ino and SSD1306_OLED_Example.ino
+  https://github.com/tigoe/Wifi101_examples/tree/master/WiFi_Connection_Examples/WiFI_Reconnect
   https://github.com/tigoe/display-examples/blob/main/OLED_Examples/SSD1306_OLED_Example/SSD1306_OLED_Example.ino
+  
 
   created 1 Mar 2018
   updated 11 Jan 2021
